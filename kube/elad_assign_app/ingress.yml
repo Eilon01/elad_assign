@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: elad_assign
+spec:
+  rules:
+  - host: elad_assign.com
+    http:
+      paths:
+        backend:
+          service:
+            name: elad_assign-service
+            port:
+              number: 80
