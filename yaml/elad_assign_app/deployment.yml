@@ -1,21 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: elad_assign
+  name: elad-assign
+  namespace: elad-assign
   labels:
-    app: elad_assign
+    app: elad-assign
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: elad_assign
+      app: elad-assign
   template:
     metadata:
       labels:
-        app: elad_assign
+        app: elad-assign
     spec:
       containers:
-      - name: elad_assign
+      - name: elad-assign
         image: eilon01/elad_assign:1.0
         ports:
         - containerPort: 5000
