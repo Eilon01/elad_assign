@@ -648,7 +648,7 @@ agent:
   directConnection: false
   privileged: false
   runAsUser: 0
-  runAsGroup:
+  runAsGroup: 0
   hostNetworking: false
   resources:
     requests:
