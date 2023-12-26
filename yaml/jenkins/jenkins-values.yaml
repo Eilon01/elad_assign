@@ -647,8 +647,8 @@ agent:
   websocket: false
   directConnection: false
   privileged: false
-  runAsUser:
-  runAsGroup:
+  runAsUser: 1000
+  runAsGroup: 1000
   hostNetworking: false
   resources:
     requests:
