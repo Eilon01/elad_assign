@@ -463,9 +463,9 @@ controller:
     # See https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/#specifying-the-class-of-an-ingress
     ingressClassName: azure-application-gateway
     # Set this path to jenkinsUriPrefix above or use annotations to rewrite path
-    # path: "/jenkins"
+    path: "/jenkins"
     # configures the hostname e.g. jenkins.example.com
-    hostName:
+    hostName: aks-eilon.northeurope.cloudapp.azure.com
     tls:
     # - secretName: jenkins.cluster.local
     #   hosts:
