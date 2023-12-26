@@ -647,7 +647,7 @@ agent:
   websocket: false
   directConnection: false
   privileged: false
-  runAsUser:
+  runAsUser: 0
   runAsGroup:
   hostNetworking: false
   resources:
