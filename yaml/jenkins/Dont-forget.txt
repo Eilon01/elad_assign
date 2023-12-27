@@ -1,3 +1,0 @@
-dont forget to give jenkins permissions to its pv
-
-sudo chown -R 1000:1000 /data/jenkins-volume
